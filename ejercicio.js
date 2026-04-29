@@ -4,22 +4,25 @@ function listarNumeros() {
     }
 }
 
-function ejecutar(numeroEjercicio) {
-    if (numeroEjercicio == 1) {
-        listarNumeros();
-    } else if (numeroEjercicio == 2) {
-        listarNumerosReversa();
-    } else if (numeroEjercicio == 3) {
-        listaPares();
-    } else if (numeroEjercicio == 4) {
-        listarImpares();
-    }
-
-}
-
 function listarNumerosReversa() {
     for (let i = 3; i > 0; i--) {
-        console.log(i)
+        console.log(i);
+    }
+}
+
+function ejecutar(numeroEjercicio) {
+    switch (numeroEjercicio) {
+        case 1: listarNumeros();
+            break;
+        case 2: listarNumerosReversa();
+            break;
+
+        case 4: listaPares();
+            break;
+
+        case 5: listarImpares();
+            break;
+
     }
 }
 
